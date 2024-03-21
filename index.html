@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <section class="section__1">
             <nav class="navbar">
-                <a href="#" class="navbar__link">Design</a>
-                <a href="#" class="navbar__link">Customers</a>
-                <a href="#" class="navbar__link">Team</a>
-                <a href="#" class="navbar__link">Contact</a>
+                <a href="#home" class="navbar__link">Design</a>
+                <a href="#customers" class="navbar__link">Customers</a>
+                <a href="#team" class="navbar__link">Team</a>
+                <a href="#contact" class="navbar__link">Contact</a>
             </nav>
             <div class="floating__bg"></div>
             <h1 class="section__1__heading">Creative Design</h1>
@@ -24,7 +24,7 @@
                 <i class="fas fa-bezier-curve"></i>
             </div>
         </section>
-        <section class="section__2">
+        <section class="section__2" id="customers">
             <h1 class="section__heading">Customers</h1>
             <div class="customers__wrapper">
                 <div class="customer">
@@ -136,6 +136,22 @@
                 </div>
             </div>
         </section>
+        <section class="section__4" id="contact">
+            <h1 class="section__heading">Contact</h1>
+            <div class="form__container">
+                <img src="images/form-img.png" alt="dasdasd" class="form__img">
+                <form class="contact__form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <p class="copyright">Copyright &copy; CodeAndCreate All Rights Reserved</p>
+        </section>
+        <a href="#" class="scroll__up__btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
     <script src="script.js"></script>
 </body>
