@@ -13,10 +13,22 @@
 
 html {
    font-size: 62.5%;
+   scroll-behavior: smooth;
 }
 
-body {
+.container {
+   width: 100%;
    overflow-x: hidden;
+}
+
+.section__heading {
+   font-size: 10rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #999;
+   text-align: center;
+   opacity: 0.1;
+   text-shadow: 2rem 2rem 4rem #aaa;
 }
 
 /* Section 1 */
@@ -46,7 +58,7 @@ body {
    background-color: rgba(50, 231, 255, 0.1);
    position: absolute;
    top: 0;
-   left: 20%;
+   left: 0;
    border-radius: 40%;
    animation: rotate 30s infinite;
 }
@@ -120,6 +132,232 @@ body {
 
 /* Section 2 */
 
+.section__2 {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
 
+
+
+.customers__wrapper {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 70%;
+}
+
+.customer {
+   width: 35rem;
+   height: 50rem;
+   background-color: #eee;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 0.5rem;
+   padding: 2rem;
+   box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+   transition: box-shadow 0.5s;
+}
+
+.customer:hover {
+   box-shadow: 2rem 2rem 3rem #ddd, -2rem -2rem 3rem #eee;
+}
+
+.customer:first-child {
+   align-self: flex-end;
+}
+
+.customer:last-child {
+   align-self: flex-start;
+}
+
+.fa-quote-left {
+   font-size: 4rem;
+   color: #f08e0f;
+}
+
+.customer__text {
+   font-size: 1.8rem;
+   margin: 2.5rem 0;
+   text-align: justify;
+}
+
+.customer__text::first-letter {
+   margin-left: 1rem;
+}
+
+.customer__rating i {
+   font-size: 2rem;
+   color: #f08e0f;
+}
+
+.customer__img {
+   width: 10rem;
+   height: 10rem;
+   object-fit: cover;
+   margin: 2rem 0;
+   border-radius: 50%;
+}
+
+.customer__name {
+   font-size: 2rem;
+   font-weight: 700;
+}
 
 /* End Section 2 */
+
+
+/* Section 3 */
+
+.section__3 {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 5rem 0;
+}
+
+.team__wrapper {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 70%;
+}
+
+.team__member {
+   width: 35rem;
+   background-color: #fffeee;
+   padding: 1rem 1rem 2rem 1rem;
+   box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+   position: relative;
+   opacity: 0.7;
+   transition: opacity 0.5s;
+}
+
+.team__member:hover {
+   opacity: 1;
+}
+
+.team__member:first-child {
+   align-self: flex-start;
+}
+
+.team__member:last-child {
+   align-self: flex-end;
+}
+
+.team__member__img {
+   width: 100%;
+   border-radius: 0.5rem;
+}
+
+.team__member__name {
+   font-size: 2.3rem;
+   font-weight: 700;
+   color: #796717;
+   margin-top: 2rem;
+}
+
+.team__member__name span {
+   font-size: 1.7rem;
+}
+
+.team__member__skills {
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem 0 2rem 0;
+}
+
+.team__member__skills li {
+   font-size: 1.5rem;
+   color: #505050;
+}
+
+.projects__btn {
+   background-color: #fab34a;
+   color: #fff;
+   padding: 0.5rem 1.5rem;
+   border-radius: 5rem;
+   font-size: 1.5rem;
+   letter-spacing: 0.2rem;
+}
+
+
+
+.story__btn {
+   width: 4rem;
+   height: 4rem;
+   background-color: #222;
+   position: absolute;
+   top: -1rem;
+   right: -1rem;
+   border-radius: 5rem;
+   display: flex;
+   align-items: center;
+   padding: 0.5rem;
+   cursor: pointer;
+   z-index: 50;
+   transition: transform 0.5s;
+}
+
+.change.story__btn {
+   transform: rotate(405deg);
+}
+
+.story__btn__line {
+   width: 100%;
+   height: 0.1rem;
+   background-color: #fff;
+}
+
+.story {
+   widows: 100%;
+   height: 100%;
+   background-color: rgba(253, 69, 69, 0.9);
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   transform: scale(0);
+   transform-origin: top right;
+   border-radius: 50rem 0 50rem 50rem;
+   transition: all 0.5s;
+}
+
+.change.story {
+   transform: scale(1);
+   border-radius: 0;
+}
+
+.story__heading {
+   font-size: 4rem;
+   font-weight: 700;
+   color: #fff;
+   margin-bottom: 2rem;
+}
+
+.story__paragraph {
+   font-size: 1.8rem;
+   color: #eee;
+   text-align: justify;
+   letter-spacing: 0.1rem;
+   text-indent: 2rem;
+}
+
+
+/* End Section 3 */
+
+
+
+
+
+
+
